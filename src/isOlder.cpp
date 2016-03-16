@@ -14,6 +14,41 @@ NOTES: 		Don't use any built-in C functions for comparisions. You are free to wr
 */
 
 int isOlder(char *dob1, char *dob2) {
+		char *removespace(char *str)
+		{
+			int c = 0; 
+			for (inti = 0; str[i]; i++)
+			{
+				if (str[i] != '-')
+					str[c++] = str[i];
+				str[c] = '\0';
+				return str;
+			}
+			int strlen(char *str)
+			{
+				len = 0;
+				while (str[len] != '\0')
+					len++;
+				return len;
+			}
+			int	validdate(dob)
+			{
+				char *db;
+				int dec,len,year,mon,day;
+				db=removespace(dob);
+				len = strlen(db);
+				for ( int i = 0; i<len; i++){
+					dec = dec * 10 + (db[i] - '0');
+					year = dec / 10000;
+					date %= 10000;
+					mon = dec / 100;
+					day = dec % 100;
+
+				}
+			}
+
+		}
+	
 
 	return 0;
 }
