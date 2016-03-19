@@ -14,10 +14,10 @@ NOTES: 		Don't use any built-in C functions for comparisions. You are free to wr
 */
 
 int isOlder(char *dob1, char *dob2) {
-		char *removespace(char *str)
+		/*char *removespace(char *str)
 		{
 			int c = 0; 
-			for (inti = 0; str[i]; i++)
+			for (int i = 0; str[i]!='\0'; i++)
 			{
 				if (str[i] != '-')
 					str[c++] = str[i];
@@ -49,6 +49,6 @@ int isOlder(char *dob1, char *dob2) {
 
 		}
 	
-
+	*/
 	return 0;
 }
